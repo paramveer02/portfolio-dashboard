@@ -1,11 +1,12 @@
 export const userGreeting = function (name) {
-    return `Namastey ${name || 'Guest'}`;
+    const timeNow = new Date().toLocaleTimeString(); // HH:MM:SS
+    return `Namastey ${name || 'Guest'} - sent at ${timeNow}`;
 }
 
 export const getUserInitials = function (name) {
     if (!name) return 'G';
-    return name
-        .split(" ")
-        .map(char => char.toUpperCase())
-        .join("-");
+
+    return name.includes(" ")
+        ? name.split(" ").map(word => word[0].toUpperCase()).join("-")
+        : name.split("").map(char => char.toUpperCase()).join("--")
 }
