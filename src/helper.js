@@ -1,6 +1,11 @@
-export const userGreeting = function (name) {
+export const userGreetingTime = function (name) {
     const timeNow = new Date().toLocaleTimeString(); // HH:MM:SS
     return `Namastey ${name || 'Guest'} - sent at ${timeNow}`;
+}
+
+export const userGreeting = function (name) {
+    const timeNow = new Date().toLocaleTimeString(); // HH:MM:SS
+    return `Namastey ${name || 'Guest'}`;
 }
 
 export const getUserInitials = function (name) {
