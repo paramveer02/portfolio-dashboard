@@ -12,6 +12,6 @@ export const getUserInitials = function (name) {
     if (!name) return 'G';
 
     return name.includes(" ")
-        ? name.split(" ").map(word => word[0].toUpperCase()).join("-")
-        : name.split("").map(char => char.toUpperCase()).join("--")
+        ? name.split(" ").map(word => word[0].toUpperCase()).join(" ")
+        : name.split("").map(char => char.toUpperCase()).join(" ")
 }

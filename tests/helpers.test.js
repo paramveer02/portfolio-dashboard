@@ -1,4 +1,4 @@
-import { userGreeting, getUserInitials } from "../src/helper.js";
+import { userGreeting, getUserInitials } from "../src/utils/helper.js";
 
 console.log('Testing user greetings');
 const greetUser = userGreeting('Paramveer');
