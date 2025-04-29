@@ -7,3 +7,9 @@ export const introduceUser = function (name) {
     return `${greetings} | your initials are ${initials}`;
 }
 
+// Create user greeting and initials based welcome card
+export const userWelcomeCard = function (name = 'Guest') {
+    const initials = getUserInitials(name)
+    const timeNow = new Date().toLocaleTimeString()
+    return `🧾 Welcome Card: Name: ${name} | Initials: ${initials} | Login Time: ${timeNow} | Status: Active`
+}
