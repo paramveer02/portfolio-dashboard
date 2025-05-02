@@ -24,7 +24,7 @@ test('userWelcomeCard returns valid structure', () => {
     const card = userWelcomeCard('Sapna Dave');
 
     expect(card).toMatch('Welcome Card: Name: Sapna Dave');
-    expect(card).toMatch('Initials: S-D');
+    expect(card).toMatch('Initials: S D');
     expect(card).toMatch(`Login Time: ${mockTime}`);
     expect(card).toMatch('Status: Active');
 
