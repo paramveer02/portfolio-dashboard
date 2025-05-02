@@ -1,10 +1,11 @@
 name: Run Jest Tests        #  Name of the workflow visible in GitHub UI
 
-on:                         #  Triggering conditions
-  push:
-    branches: [ main ]      # Run when code is pushed to main
-  pull_request:
-    branches: [ main ]      # Run on PRs to main
+on: [push, pull_request]
+# on:                         #  Triggering conditions
+  # push:
+  #   branches: [ main ]      # Run when code is pushed to main
+  # pull_request:
+  #   branches: [ main ]      # Run on PRs to main
 
 jobs:                       #  Define a "job" (think: a mini virtual machine)
   test:                     # Job name
